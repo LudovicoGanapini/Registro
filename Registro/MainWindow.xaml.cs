@@ -35,6 +35,15 @@ namespace Registro
             classe.Add(a);
 
         }
+
+        private void btnVisualizza_Click(object sender, RoutedEventArgs e)
+        {
+            foreach(Alunno a in classe)
+            {
+                lstVisualizza.Items.Add(a.Stampa());
+            }
+
+        }
     }
 
     class Alunno
@@ -46,5 +55,9 @@ namespace Registro
             cognome = c;
         }
 
+        public string Stampa()
+        {
+            return nome + " " + cognome;
+        }
     }
 }

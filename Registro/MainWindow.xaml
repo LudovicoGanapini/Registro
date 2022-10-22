@@ -12,6 +12,8 @@
         <Button x:Name="btnInserisci" Content="inserisci" HorizontalAlignment="Left" Margin="400,60,0,0" VerticalAlignment="Top" Height="56" Width="144" Click="btnInserisci_Click"/>
         <TextBlock HorizontalAlignment="Left" Margin="121,50,0,0" TextWrapping="Wrap" Text="nome" VerticalAlignment="Top"/>
         <TextBlock HorizontalAlignment="Left" Margin="253,50,0,0" TextWrapping="Wrap" Text="cognome" VerticalAlignment="Top"/>
+        <Button x:Name="btnVisualizza" Content="Visualizza" HorizontalAlignment="Left" Margin="151,171,0,0" VerticalAlignment="Top" Click="btnVisualizza_Click"/>
+        <ListBox x:Name="lstVisualizza" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="322,154,270,119"/>
 
     </Grid>
 </Window>
